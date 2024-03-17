@@ -1,5 +1,5 @@
 SELECT c.login, 
-       COUNT(s.track) 
+       COUNT(*) 
 FROM "Couriers" AS c 
 INNER JOIN "Orders" AS s ON c.id = s.id 
 WHERE "inDelivery" = true 
